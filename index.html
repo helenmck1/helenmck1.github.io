@@ -1,67 +1,62 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <title>Carto Demo Finder</title>
+
+  <!-- Production-ready Gen App Builder widget script -->
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #searchContainer {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input#searchWidgetTrigger {
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Carto Demo Finder&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Production-ready Gen App Builder widget script --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>#searchContainer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>input#searchWidgetTrigger {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Carto Demo Finder&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Input that triggers the search widget --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;input placeholder="Search here" id="searchWidgetTrigger" /&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Container where the full widget UI will render --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="searchContainer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;gen-search-widget</p>
-<p class="p1"><span class="Apple-converted-space">      </span>configId="e245591c-2fd3-4fd9-95b9-5969c6e1b639"</p>
-<p class="p1"><span class="Apple-converted-space">      </span>triggerId="searchWidgetTrigger"</p>
-<p class="p1"><span class="Apple-converted-space">      </span>style="width: 100%; display: block;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/gen-search-widget&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('DOMContentLoaded', function() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>// Make sure the widget initializes after DOM loads</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const widget = document.querySelector('gen-search-widget');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (widget) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Additional options could go here if needed</p>
-<p class="p1"><span class="Apple-converted-space">        </span>console.log('Search widget loaded');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <h1>Carto Demo Finder</h1>
+
+  <!-- Input that triggers the search widget -->
+  <div id="searchContainer">
+    <input placeholder="Search here" id="searchWidgetTrigger" />
+
+    <!-- Full widget UI will render here -->
+    <gen-search-widget
+      configId="e245591c-2fd3-4fd9-95b9-5969c6e1b639"
+      triggerId="searchWidgetTrigger"
+      style="width: 100%; display: block;">
+    </gen-search-widget>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const widget = document.querySelector('gen-search-widget');
+      if (widget) {
+        console.log('Search widget loaded');
+      } else {
+        console.error('Search widget failed to load');
+      }
+    });
+  </script>
 </body>
 </html>
