@@ -1,37 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Demo Search Widget</title>
-  <!-- Vertex AI Widget JS -->
-  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 40px; }
-    input { padding: 8px 12px; font-size: 16px; width: 100%; max-width: 400px; margin-top: 20px; }
-  </style>
-</head>
-<body>
-  <h1>Search Demo Maps</h1>
-  <p>Use the search below to find demos in our repository:</p>
-
-  <!-- Search widget -->
-  <gen-search-widget
-    id="my-search-widget"
-    configId="7d93dbe9-a505-4645-84e1-b0269a961d24"
-    triggerId="searchWidgetTrigger">
-  </gen-search-widget>
-
-  <!-- Input that triggers the widget -->
-  <input placeholder="Search here..." id="searchWidgetTrigger" />
-
-  <!-- Ensure widget initializes after page loads -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const widget = document.getElementById("my-search-widget");
-      if (widget) {
-        widget.initialize?.(); // explicitly initialize the widget if needed
-      }
-    });
-  </script>
-</body>
-</html>
+<iframe
+  src="https://your-org.github.io/vertex-widget.html"
+  width="100%"
+  height="700"
+  style="border:none; border-radius: 8px;">
+</iframe>
