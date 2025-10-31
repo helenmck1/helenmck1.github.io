@@ -2,59 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Carto Demo Finder</title>
-
-  <!-- Production-ready Gen App Builder widget script -->
+  <title>Demo Search Widget</title>
+  <!-- Vertex AI Widget JS -->
   <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
-
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #f9f9f9;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    #searchContainer {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    input#searchWidgetTrigger {
-      padding: 10px;
-      width: 100%;
-      box-sizing: border-box;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
+    body { font-family: Arial, sans-serif; padding: 40px; }
+    input { padding: 8px 12px; font-size: 16px; width: 100%; max-width: 400px; margin-top: 20px; }
   </style>
 </head>
 <body>
-  <h1>Carto Demo Finder</h1>
+  <h1>Search Demo Maps</h1>
+  <p>Use the search below to find demos in our repository:</p>
 
-  <!-- Input that triggers the search widget -->
-  <div id="searchContainer">
-    <input placeholder="Search here" id="searchWidgetTrigger" />
+  <!-- Search widget -->
+  <gen-search-widget
+    id="my-search-widget"
+    configId="7d93dbe9-a505-4645-84e1-b0269a961d24"
+    triggerId="searchWidgetTrigger">
+  </gen-search-widget>
 
-    <!-- Full widget UI will render here -->
-    <gen-search-widget
-      configId="e245591c-2fd3-4fd9-95b9-5969c6e1b639"
-      triggerId="searchWidgetTrigger"
-      style="width: 100%; display: block;">
-    </gen-search-widget>
-  </div>
+  <!-- Input that triggers the widget -->
+  <input placeholder="Search here..." id="searchWidgetTrigger" />
 
+  <!-- Ensure widget initializes after page loads -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const widget = document.querySelector('gen-search-widget');
+    document.addEventListener("DOMContentLoaded", function() {
+      const widget = document.getElementById("my-search-widget");
       if (widget) {
-        console.log('Search widget loaded');
-      } else {
-        console.error('Search widget failed to load');
+        widget.initialize?.(); // explicitly initialize the widget if needed
       }
     });
   </script>
